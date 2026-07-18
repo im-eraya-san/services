@@ -1,0 +1,9 @@
+services:
+  samba:
+    image: samba:0.1
+    restart: always
+    container_name: samba
+    network_mode: host
+    volumes:
+     - $PWD/config/:/etc/samba/
+     - $PWD/data/:/data/
