@@ -6,4 +6,3 @@ services:
     network_mode: host
     volumes:
      - $PWD/config/:/etc/samba/
-     - $PWD/data/:/data/
